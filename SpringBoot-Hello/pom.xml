@@ -24,7 +24,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <!--                如果依赖父亲是spring-boot-starter-parent（不是多模块），就不需要添加,在里面已经配置了-->
                 <configuration>
-                    <mainClass>com.fx.App</mainClass>
+                    <mainClass>com.fx.com.fx.App</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 这个Mapper的主要功能就是写sql mapper:根 namespace:命令空间 (用来确定唯一) 以前这个是可以不加的,现在必需加
+	namespace的值，规则的：映射文件XxxMapper.xml所在的包+domain类名+Mapper -->
+<mapper namespace="com.fx.mapper.UserMapper">
+
+    <insert id="save" parameterType="com.fx.domain.User" useGeneratedKeys="true"
+            keyColumn="id"
+            keyProperty="id"
+    >
+        insert into t_user (name) values (#{name})
+    </insert>
+
+    <select id="loadAll" resultType="com.fx.domain.User">
+        select * from t_user
+    </select>
+</mapper>

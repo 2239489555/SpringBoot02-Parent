@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--导入命名空间 -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>入门</title>
+    <!--    引入js-->
+    <script th:src="@{/webjars/jquery/3.3.1/dist/jquery.js}"></script>
+    <script>
+        alert($)
+    </script>
+</head>
+<body>
+<!--jquery juquery.js-->
+<h1>成功！</h1>
+<div th:text="${msg}">这是显示欢迎信息</div>
+</body>
+</html>

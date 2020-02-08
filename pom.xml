@@ -12,6 +12,10 @@
         <module>SpringBoot-Hello</module>
         <module>SpringBoot02-Config</module>
         <module>SpringBoot03-test</module>
+        <module>SpringBoot04-logging</module>
+        <module>SpringBoot05-web</module>
+        <module>SpringBoot06-mybatis-xml</module>
+        <module>SpringBoot07-mybatis-anno</module>
     </modules>
 <dependencies>
     <dependency>

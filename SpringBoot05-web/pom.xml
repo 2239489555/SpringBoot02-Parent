@@ -9,7 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>SpringBoot03-test</artifactId>
+    <artifactId>SpringBoot05-web</artifactId>
+    <properties>
+        <!--切换thymeleaf版本-->
+
+        <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
+        <!-- 布局功能的支持程序  thymeleaf3主程序  layout2以上版本 -->
+        <!-- thymeleaf2   layout1-->
+        <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+    </properties>
+
     <dependencies>
         <!--        导入相关的场景启动器，就会把相关的依赖一起导入进来-->
         <dependency>
@@ -19,7 +28,14 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!--引入jquery-webjar 在访问的时候只需要写webjars下面资源的名称即可-->
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.3.1</version>
         </dependency>
 
     </dependencies>
@@ -32,7 +48,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <!--                如果依赖父亲是spring-boot-starter-parent（不是多模块），就不需要添加,在里面已经配置了-->
                 <configuration>
-                    <mainClass>com.fx.com.fx.App</mainClass>
+                    <mainClass>com.fx.App</mainClass>
                 </configuration>
                 <executions>
                     <execution>

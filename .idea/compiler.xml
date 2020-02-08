@@ -6,15 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringBoot03-test" />
-        <module name="SpringBoot-Config" />
-        <module name="SpringBoot-Hello" />
+        <module name="SpringBoot07-mybatis-n" />
+        <module name="SpringBoot06-mybatis-xml" />
         <module name="SpringBoot02-Config" />
+        <module name="SpringBoot-Hello" />
+        <module name="SpringBoot04-logging" />
+        <module name="SpringBoot05-web" />
+        <module name="SpringBoot03-test" />
+        <module name="SpringBoot07-mybatis-anno" />
+        <module name="SpringBoot-Config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringBoot-Config" target="1.8" />
       <module name="SpringBoot-Config)" target="1.8" />
+      <module name="SpringBoot07-mybatis-n" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

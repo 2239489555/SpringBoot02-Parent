@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>SpringBoot03-test</artifactId>
+    <artifactId>SpringBoot06-mybatis-xml</artifactId>
     <dependencies>
-        <!--        导入相关的场景启动器，就会把相关的依赖一起导入进来-->
+        <!-- 导入相关的场景启动器，就会把相关的依赖一起导入进来-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -22,6 +22,30 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+
+        <!-- mysql 数据库驱动. -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+
+        <!--
+                    spring-boot mybatis依赖：
+
+                    请不要使用1.0.0版本，因为还不支持拦截器插件，
+                    1.1.1 是博主写帖子时候的版本，大家使用最新版本即可
+                 -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.1.1</version>
+        </dependency>
     </dependencies>
 
 
@@ -32,7 +56,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <!--                如果依赖父亲是spring-boot-starter-parent（不是多模块），就不需要添加,在里面已经配置了-->
                 <configuration>
-                    <mainClass>com.fx.com.fx.App</mainClass>
+                    <mainClass>com.fx.App</mainClass>
                 </configuration>
                 <executions>
                     <execution>
